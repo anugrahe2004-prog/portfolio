@@ -310,22 +310,44 @@ footer {
 
 @media screen and (max-width: 768px) {
   nav {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-around;
   }
 
   .nav-links {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 10px;
     margin-top: 10px;
   }
 
   .nav-links a {
-    padding: 10px 20px;
-    font-size: 1.1rem;
+    padding: 8px 12px;
+    font-size: 0.95rem;
   }
   body {
     padding-top: 150px;
+  }
+
+    .hero-content, .contact-form, .social-links {
+    padding: 0 15px;
+  }
+
+  .contact-form input, .contact-form textarea {
+    font-size: 0.95rem;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+  section {
+    scroll-margin-top: 120px; /* taller navbar on mobile */
   }
 }
